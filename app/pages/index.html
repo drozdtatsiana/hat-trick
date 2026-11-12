@@ -15,7 +15,7 @@
                         <li class="hero__item">Хоккейные сборы</li>
                     </ul>
                     <div class="hero__box-btn">
-                        <button class="hero__btn hero__btn--primary" type="button">
+                        <button class="hero__btn hero__btn--primary" type="button" id="open-booking">
                             Записаться
                         </button>
                         <a class="hero__btn hero__btn--outline" href="#activities">
@@ -23,20 +23,91 @@
                         </a>
                     </div>
                     <p class="hero__slogan">
-                        <span class="hero__slogan-title">Научись. Играй. Побеждай.</span>
+                        <span class="hero__slogan-title">Тренируйся. Играй. Побеждай.</span>
                         Три шага к твоему хет-трику
                     </p>
                 </div>
-                  <aside class="hero__news news">
-        <img class="news__img" src="images/news.jpg" alt="Турнир «Кубок льда»" width="352" height="240">
-       <time class="news__date" datetime="2026-12-15">15.12.2026</time>
-        <h2 class="news__title">Турнир «Кубок льда»</h2>
-        <p class="news__text">Открытый турнир для юных хоккеистов. Регистрация команд открыта.</p>
-    </aside>
+                <aside class="hero__news news">
+                    <img class="news__img" src="images/news.jpg" alt="Турнир «Кубок льда»" width="352" height="240">
+                    <time class="news__date" datetime="2026-12-15">15.12.2026</time>
+                    <h2 class="news__title">Турнир «Кубок льда»</h2>
+                    <p class="news__text">Открытый турнир для юных хоккеистов. Регистрация команд открыта.</p>
+                </aside>
             </div>
-
         </div>
     </section>
 
+    <dialog class="booking" id="booking">
+        <form class="booking__form" method="dialog">
+            <h2 class="booking__title">Запись на тренировку</h2>
+            <label class="booking__label">
+                Имя
+                <input class="booking__input" type="text" name="name" required>
+            </label>
+            <label class="booking__label">
+                Телефон
+                <input class="booking__input" type="tel" name="phone" required>
+            </label>
+            <div class="booking__actions">
+                <button class="booking__btn booking__btn--outline" type="submit" value="cancel" formnovalidate>
+                    Отмена
+                </button>
+                <button class="booking__btn booking__btn--primary" type="submit" value="send">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </dialog>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__top">
+                <div class="about__story">
+                    <h2 class="about__title">О школе</h2>
+                    <p class="about__text">
+                        Хоккейная школа Hat-Trick была основана в Минске с одной целью: дать детям и взрослым качественную подготовку и возможность расти в хоккее. Сегодня мы работаем с учениками разного уровня, от первых шагов на льду до участия в турнирах.
+                    </p>
+                    <p class="about__text">
+                        В основе работы лежат три принципа: безопасность на льду, уважение к каждому ученику и постепенный рост от базовых навыков к игре в команде. Каждый год мы добавляем новые программы, а наши воспитанники участвуют в городских и республиканских турнирах.
+                    </p>
+                </div>
+                <figure class="about__director">
+                    <img class="about__photo" src="images/director.jpg" alt="Директор хоккейной школы Hat-Trick Алексей Петров" width="520" height="650">
+                    <figcaption class="about__caption">
+                        <span class="about__name">Алексей Петров</span>
+                        <span class="about__role">Директор школы</span>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="about__bottom">
+                <h2 class="about__subtitle">Наши тренеры</h2>
+                <p class="about__lead">
+                    В нашей команде работают высококвалифицированные тренеры с опытом подготовки игроков на всех уровнях. Каждый из них знает, как построить тренировку под конкретного ученика.
+                </p>
+                <ul class="about__cards-list">
+                    <li class="about__cards-item">
+                        <img class="about__cards-photo" src="images/coach-1.jpg" alt="Тренер Дмитрий Смирнов" width="300" height="375">
+                        <h3 class="about__cards-name">Дмитрий Смирнов</h3>
+                        <p class="about__cards-role">Мастер спорта, тренер сборной</p>
+                        <p class="about__cards-achievement">Победитель чемпионата Беларуси</p>
+                    </li>
+                    <li class="about__cards-item">
+                        <img class="about__cards-photo" src="images/coach-2.jpg" alt="Тренер Игорь Соколов" width="300" height="375">
+                        <h3 class="about__cards-name">Игорь Соколов</h3>
+                        <p class="about__cards-role">Тренер по катанию</p>
+                        <p class="about__cards-achievement">Призёр юниорских соревнований</p>
+                    </li>
+                    <li class="about__cards-item">
+                        <img class="about__cards-photo" src="images/coach-3.jpg" alt="Тренер Андрей Волков" width="300" height="375">
+                        <h3 class="about__cards-name">Андрей Волков</h3>
+                        <p class="about__cards-role">Тренер индивидуальных занятий</p>
+                        <p class="about__cards-achievement">Победитель турнира</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
 <!--=include footer.html  -->
 <!--=include script.html  -->
