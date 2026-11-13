@@ -15,7 +15,7 @@
                         <li class="hero__item">Хоккейные сборы</li>
                     </ul>
                     <div class="hero__box-btn">
-                        <button class="hero__btn hero__btn--primary" type="button" id="open-booking">
+                        <button class="hero__btn hero__btn--primary" type="button" data-modal-open>
                             Записаться
                         </button>
                         <a class="hero__btn hero__btn--outline" href="#activities">
@@ -108,6 +108,37 @@
             </div>
         </div>
     </section>
+
+    <section class="activities" id="activities">
+    <div class="container">
+        <div class="activities__top">
+            <p class="activities__label">Программы</p>
+            <div class="activities__row">
+                <h2 class="activities__title">
+                    Безопасный лёд — твоё лучшее приключение
+                </h2>
+                <div class="activities__info">
+                    <p class="activities__text">
+                        Добро пожаловать в нашу школу! Если вы дошли до этого места, значит, вы хотите сделать первые шаги на льду. Начать никогда не поздно, и вам понравится этот новый образ жизни. Хоккей укрепляет здоровье и характер в дружной и весёлой атмосфере. Школа Hat-Trick предлагает групповые и индивидуальные занятия по катанию на коньках и хоккею для детей и взрослых. Если вы хотите взять экипировку в аренду, у нас есть коньки, шлемы и клюшки.
+                    </p>
+                    <button class="activities__btn" type="button" data-modal-open>Записаться</button>
+                </div>
+            </div>
+        </div>
+        <ul class="activities__list">
+            <li class="activities__item">Индивидуальные тренировки</li>
+            <li class="activities__item">Групповые тренировки</li>
+            <li class="activities__item">Аренда льда и экипировки</li>
+            <li class="activities__item">Обучение катанию</li>
+            <li class="activities__item">Хоккейные сборы</li>
+        </ul>
+    </div>
+    <picture>
+    <source srcset="images/activities.avif" type="image/avif">
+    <source srcset="images/activities.webp" type="image/webp">
+    <img class="activities__img" src="images/activities.png" alt="Хоккейный матч" width="1920" height="600" loading="lazy">
+</picture>
+</section>
 </main>
 <!--=include footer.html  -->
 <!--=include script.html  -->

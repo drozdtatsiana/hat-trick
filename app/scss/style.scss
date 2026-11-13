@@ -427,6 +427,94 @@
 
 .activities {
   background-color: vars.$color-bg-light;
+
+  &__top {
+    margin-bottom: 60px;
+  }
+
+  &__label {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: vars.$color-accent;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__title {
+    flex: 0 0 50%;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    flex: 0 0 50%;
+    max-width: 850px;
+  }
+
+  &__text {
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: vars.$color-grey;
+  }
+
+  &__btn {
+    padding: 18px 40px;
+    border-radius: 100px;
+    background-color: vars.$color-accent;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: vars.$color-dark;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: vars.$color-hover;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-bottom: 100px;
+  }
+
+    &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    padding:50px;
+    border: 1px solid vars.$color-grey;
+    border-radius: 50%;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    transition: background-color 0.3s, border-color 0.3s;
+
+    &:hover {
+      border-color: vars.$color-accent;
+      background-color: vars.$color-card;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 .footer {
