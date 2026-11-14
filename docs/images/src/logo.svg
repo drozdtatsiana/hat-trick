@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="48" viewBox="0 0 250 48" role="img" aria-label="Hat-Trick">
+  <title>Hat-Trick</title>
+  <defs>
+    <g id="puck">
+      <path d="M0 6v8c0 3.3 6.7 6 15 6s15-2.7 15-6V6z" fill="#1e86c2"/>
+      <ellipse cx="15" cy="6" rx="15" ry="6" fill="#2fb8ff"/>
+      <ellipse cx="15" cy="6" rx="9" ry="3" fill="#8fdcff" opacity=".55"/>
+    </g>
+  </defs>
+  <use href="#puck" x="2" y="24"/>
+  <use href="#puck" x="34" y="24"/>
+  <g transform="translate(18 6)">
+    <path d="M0 6v8c0 3.3 6.7 6 15 6s15-2.7 15-6V6z" fill="#b82a36"/>
+    <ellipse cx="15" cy="6" rx="15" ry="6" fill="#e63946"/>
+    <ellipse cx="15" cy="6" rx="9" ry="3" fill="#ff9aa2" opacity=".55"/>
+  </g>
+  <text x="76" y="33" font-family="'Arial Black', 'Arial', sans-serif" font-weight="900" font-size="24" letter-spacing="1" fill="#ffffff">HAT-TRICK</text>
+</svg>
