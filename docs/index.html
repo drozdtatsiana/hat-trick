@@ -1,25 +1,461 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MilaSofi</title>
+  <meta name="description" content="Хоккейная школа «Хет-трик» в Минске: обучение катанию на коньках и хоккею для детей и взрослых.">
+  <title>HAT-TRICK</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-  <div class="wrapper">
-<header class="header"></header>
 
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo" href="./">
+        <img src="images/logo.svg" alt="Hat-Trick" width="200" height="48" />
+      </a>
 
+      <nav class="menu" aria-label="Основная навигация">
+        <button
+          class="menu__btn"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="menu-list"
+        >
+          <span></span>
+        </button>
 
- 
-<main class="main"></main>
+        <ul class="menu__list" id="menu-list">
+          <li class="menu__item">
+            <a class="menu__link" href="./">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about">О школе</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#activities">Программы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
 
-<footer class="footer"></footer>
-</div>
+      <a class="tel" href="tel:+375290000000">+375 (29) 000-00-00</a>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="hero__place">Минск. Беларусь</p>
+          <h1 class="hero__title">Хоккейная школа Hat-Trick</h1>
+          <ul class="hero__list">
+            <li class="hero__item">Индивидуальные тренировки</li>
+            <li class="hero__item">Групповые тренировки</li>
+            <li class="hero__item">Аренда льда и экипировки</li>
+            <li class="hero__item">Обучение катанию на коньках</li>
+            <li class="hero__item">Хоккейные сборы</li>
+          </ul>
+          <div class="hero__box-btn">
+            <button
+              class="hero__btn hero__btn--primary"
+              type="button"
+              data-modal-open
+            >
+              Записаться
+            </button>
+            <a class="hero__btn hero__btn--outline" href="#activities">
+              Программы
+            </a>
+          </div>
+          <p class="hero__slogan">
+            <span class="hero__slogan-title">Тренируйся. Играй. Побеждай.</span>
+            Три шага к твоему хет-трику
+          </p>
+        </div>
+        <aside class="hero__news news">
+          <img
+            class="news__img"
+            src="images/news.jpg"
+            alt="Турнир «Кубок льда»"
+            width="352"
+            height="240"
+          />
+          <time class="news__date" datetime="2026-12-15">15.12.2026</time>
+          <h2 class="news__title">Турнир «Кубок льда»</h2>
+          <p class="news__text">
+            Открытый турнир для юных хоккеистов. Регистрация команд открыта.
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <dialog class="booking" id="booking">
+    <form class="booking__form" method="dialog">
+      <h2 class="booking__title">Запись на тренировку</h2>
+      <label class="booking__label">
+        Имя
+        <input class="booking__input" type="text" name="name" required />
+      </label>
+      <label class="booking__label">
+        Телефон
+        <input class="booking__input" type="tel" name="phone" required />
+      </label>
+      <div class="booking__actions">
+        <button
+          class="booking__btn booking__btn--outline"
+          type="submit"
+          value="cancel"
+          formnovalidate
+        >
+          Отмена
+        </button>
+        <button
+          class="booking__btn booking__btn--primary"
+          type="submit"
+          value="send"
+        >
+          Отправить
+        </button>
+      </div>
+    </form>
+  </dialog>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__top">
+        <div class="about__story">
+          <h2 class="about__title">О школе</h2>
+          <p class="about__text">
+            Хоккейная школа Hat-Trick была основана в Минске с одной целью: дать
+            детям и взрослым качественную подготовку и возможность расти в
+            хоккее. Сегодня мы работаем с учениками разного уровня, от первых
+            шагов на льду до участия в турнирах.
+          </p>
+          <p class="about__text">
+            В основе работы лежат три принципа: безопасность на льду, уважение к
+            каждому ученику и постепенный рост от базовых навыков к игре в
+            команде. Каждый год мы добавляем новые программы, а наши
+            воспитанники участвуют в городских и республиканских турнирах.
+          </p>
+        </div>
+        <figure class="about__director">
+          <img
+            class="about__photo"
+            src="images/director.jpg"
+            alt="Директор хоккейной школы Hat-Trick Алексей Петров"
+            width="520"
+            height="650"
+            loading="lazy"
+          />
+          <figcaption class="about__caption">
+            <span class="about__name">Алексей Петров</span>
+            <span class="about__role">Директор школы</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="about__bottom">
+        <h2 class="about__subtitle">Наши тренеры</h2>
+        <p class="about__lead">
+          В нашей команде работают высококвалифицированные тренеры с опытом
+          подготовки игроков на всех уровнях. Каждый из них знает, как построить
+          тренировку под конкретного ученика.
+        </p>
+        <ul class="about__cards-list">
+          <li class="about__cards-item">
+            <img
+              class="about__cards-photo"
+              src="images/coach-1.jpg"
+              alt="Тренер Дмитрий Смирнов"
+              width="300"
+              height="375"
+            loading="lazy"
+            />
+            <h3 class="about__cards-name">Дмитрий Смирнов</h3>
+            <p class="about__cards-role">Мастер спорта, тренер сборной</p>
+            <p class="about__cards-achievement">
+              Победитель чемпионата Беларуси
+            </p>
+          </li>
+          <li class="about__cards-item">
+            <img
+              class="about__cards-photo"
+              src="images/coach-2.jpg"
+              alt="Тренер Игорь Соколов"
+              width="300"
+              height="375"
+            loading="lazy"
+            />
+            <h3 class="about__cards-name">Игорь Соколов</h3>
+            <p class="about__cards-role">Тренер по катанию</p>
+            <p class="about__cards-achievement">
+              Призёр юниорских соревнований
+            </p>
+          </li>
+          <li class="about__cards-item">
+            <img
+              class="about__cards-photo"
+              src="images/coach-3.jpg"
+              alt="Тренер Андрей Волков"
+              width="300"
+              height="375"
+            loading="lazy"
+            />
+            <h3 class="about__cards-name">Андрей Волков</h3>
+            <p class="about__cards-role">Тренер индивидуальных занятий</p>
+            <p class="about__cards-achievement">Победитель турнира</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="activities" id="activities">
+    <div class="container">
+      <div class="activities__top">
+        <p class="activities__label">Программы</p>
+        <div class="activities__row">
+          <h2 class="activities__title">
+            Безопасный лёд — твоё лучшее приключение
+          </h2>
+          <div class="activities__info">
+            <p class="activities__text">
+              Добро пожаловать в нашу школу! Если вы дошли до этого места,
+              значит, вы хотите сделать первые шаги на льду. Начать никогда не
+              поздно, и вам понравится этот новый образ жизни. Хоккей укрепляет
+              здоровье и характер в дружной и весёлой атмосфере. Школа Hat-Trick
+              предлагает групповые и индивидуальные занятия по катанию на
+              коньках и хоккею для детей и взрослых. Если вы хотите взять
+              экипировку в аренду, у нас есть коньки, шлемы и клюшки.
+            </p>
+            <button class="activities__btn" type="button" data-modal-open>
+              Записаться
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="activities__list">
+        <li class="activities__item">Индивидуальные тренировки</li>
+        <li class="activities__item">Групповые тренировки</li>
+        <li class="activities__item">Аренда льда и экипировки</li>
+        <li class="activities__item">Обучение катанию</li>
+        <li class="activities__item">Хоккейные сборы</li>
+      </ul>
+    </div>
+    <picture>
+      <source srcset="images/activities.avif" type="image/avif" />
+      <source srcset="images/activities.webp" type="image/webp" />
+      <img
+        class="activities__img"
+        src="images/activities.png"
+        alt="Хоккейный матч"
+        width="1920"
+        height="600"
+        loading="lazy"
+      />
+    </picture>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="reviews__head">
+        <p class="reviews__label">Отзывы</p>
+        <h2 class="reviews__title">Выходи на лёд</h2>
+      </div>
+      <ul class="reviews__list">
+        <li class="reviews__item reviews__item--small">
+          <picture>
+            <source srcset="images/reviews-1.avif" type="image/avif" />
+            <source srcset="images/reviews-1.webp" type="image/webp" />
+            <img
+              class="reviews__photo"
+              src="images/reviews-1.jpg"
+              alt="Улыбающийся мужчина в оранжевой куртке с коньками на плече"
+              width="270"
+              height="375"
+              loading="lazy"
+            />
+          </picture>
+          <blockquote class="reviews__quote">
+            <p>
+              «Взял коньки и всю экипировку на неделю. Всё новое, в отличном
+              состоянии. 10 из 10.»
+            </p>
+          </blockquote>
+          <p class="reviews__author">Александр</p>
+          <time class="reviews__date" datetime="2026-09">Сентябрь 2026</time>
+        </li>
+        <li class="reviews__item reviews__item--large">
+          <picture>
+            <source srcset="images/reviews-2.avif" type="image/avif" />
+            <source srcset="images/reviews-2.webp" type="image/webp" />
+            <img
+              class="reviews__photo"
+              src="images/reviews-2.jpg"
+              alt="Мужчина в зелёной куртке зашнуровывает коньки на краю катка"
+              width="560"
+              height="400"
+              loading="lazy"
+            />
+          </picture>
+          <blockquote class="reviews__quote">
+            <p>
+              «Раньше никогда не стоял на коньках. Тренер за одно занятие научил
+              держать равновесие и не бояться льда. Мне очень понравилось!»
+            </p>
+          </blockquote>
+          <p class="reviews__author">Игорь</p>
+          <time class="reviews__date" datetime="2026-10">Октябрь 2026</time>
+        </li>
+        <li class="reviews__item reviews__item--large">
+          <picture>
+            <source srcset="images/reviews-3.avif" type="image/avif" />
+            <source srcset="images/reviews-3.webp" type="image/webp" />
+            <img
+              class="reviews__photo"
+              src="images/reviews-3.jpg"
+              alt="Мужчина в жёлтой куртке катается на коньках по открытому катку"
+              width="560"
+              height="400"
+              loading="lazy"
+            />
+          </picture>
+          <blockquote class="reviews__quote">
+            <p>
+              «Занятие в конце дня. Тренеры внимательные и всегда рядом на льду,
+              поэтому я чувствовал себя уверенно. Спасибо школе Hat-Trick!»
+            </p>
+          </blockquote>
+          <p class="reviews__author">Максим</p>
+          <time class="reviews__date" datetime="2026-10">Октябрь 2026</time>
+        </li>
+        <li class="reviews__item reviews__item--small">
+          <picture>
+            <source srcset="images/reviews-4.avif" type="image/avif" />
+            <source srcset="images/reviews-4.webp" type="image/webp" />
+            <img
+              class="reviews__photo"
+              src="images/reviews-4.jpg"
+              alt="Пожилая пара в тёплой одежде на катке с гирляндами"
+              width="270"
+              height="375"
+              loading="lazy"
+            />
+          </picture>
+          <blockquote class="reviews__quote">
+            <p>
+              «Пришли вдвоём с мужем и не пожалели. Тренер подобрал спокойную
+              нагрузку, теперь катаемся каждую неделю.»
+            </p>
+          </blockquote>
+          <p class="reviews__author">Ольга</p>
+          <time class="reviews__date" datetime="2026-11">Ноябрь 2026</time>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="footer" id="contacts">
+  <div class="container">
+    <div class="footer__top">
+      <a class="logo" href="./">
+        <img src="images/logo.svg" alt="Hat-Trick" width="200" height="48" />
+      </a>
+      <h2 class="footer__title">Хоккейная школа Hat-Trick</h2>
+    </div>
+
+    <div class="footer__info">
+      <div class="footer__col">
+        <h3 class="footer__heading">О школе</h3>
+        <p class="footer__text">Хоккейная школа Hat-Trick</p>
+        <p class="footer__text">
+          Учебный проект, не является реальной организацией
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Адрес</h3>
+        <address>
+          <p class="footer__text">Ледовая арена</p>
+          <p class="footer__text">Минск, Беларусь</p>
+        </address>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__heading">Контакты</h3>
+        <a class="footer__link" href="tel:+375290000000">+375 (29) 000-00-00</a>
+        <a class="footer__link" href="mailto:info@hat-trick.example">
+          info@hat-trick.example
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <ul class="footer__social">
+        <li>
+          <a class="footer__social-link" href="#" aria-label="Instagram">
+            <svg width="44" height="44" viewBox="0 0 62 62" aria-hidden="true">
+              <use href="images/sprite.svg#icon-instagram" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="footer__social-link" href="#" aria-label="WhatsApp">
+            <svg width="44" height="44" viewBox="0 0 62 62" aria-hidden="true">
+              <use href="images/sprite.svg#icon-whatsApp" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="footer__social-link" href="#" aria-label="YouTube">
+            <svg width="44" height="44" viewBox="0 0 62 62" aria-hidden="true">
+              <use href="images/sprite.svg#icon-youtube" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="footer__social-link" href="#" aria-label="Facebook">
+            <svg width="44" height="44" viewBox="0 0 62 62" aria-hidden="true">
+              <use href="images/sprite.svg#icon-facebook" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__bar">
+      <p class="footer__text">
+        © 2026 Хоккейная школа Hat-Trick. Все права защищены.
+      </p>
+
+      <nav class="footer__legal" aria-label="Юридическая информация">
+        <ul class="footer__nav">
+          <li><a class="footer__nav-link" href="#">Условия</a></li>
+          <li>
+            <a class="footer__nav-link" href="#">Политика конфиденциальности</a>
+          </li>
+          <li>
+            <a class="footer__nav-link" href="#">Книга жалоб и предложений</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+
 <script src="js/main.min.js"></script>
 </body>
 
