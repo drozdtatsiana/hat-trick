@@ -4,6 +4,8 @@
 
 **Демо:** https://drozdtatsiana.github.io/hat-trick/
 
+![Главная страница](screenshots/home.png)
+
 > Учебный проект. Школа, адрес, контакты и отзывы вымышленные.
 
 ## Структура
@@ -13,6 +15,7 @@ app/            исходники: HTML-разметка, SCSS, JS, изобр�
 docs/           собранный сайт, который публикует GitHub Pages
 gulpfile.js     сборка и локальный сервер
 package.json    зависимости и скрипты
+screenshots/    скриншоты для README
 ```
 
 ## Стек
