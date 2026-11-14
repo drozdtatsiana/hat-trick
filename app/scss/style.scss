@@ -2,7 +2,6 @@
 @use "vars";
 @use "fonts";
 @use "global";
-@use "../../node_modules/swiper/swiper-bundle.css";
 @use "media";
 
 .header {
@@ -454,20 +453,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
   }
 
   &__title {
-    flex: 0 0 50%;
     font-size: 64px;
     font-weight: 800;
     line-height: 1.2;
     text-transform: uppercase;
+    align-self: flex-start;
   }
 
   &__info {
-    flex: 0 0 50%;
-    max-width: 850px;
+      max-width: 850px;
   }
 
   &__text {
@@ -687,7 +685,12 @@
   &__bar {
     padding-top: 30px;
     border-top: 1px solid vars.$color-grey;
-  }
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  
 
   &__nav {
     display: flex;
